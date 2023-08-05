@@ -1,0 +1,113 @@
+/*
+	Thara AbuSaleh 
+	Final Project 2022 - Chess Game
+*/
+body{
+	margin: 0;
+	background-color:rgb(172, 117, 166);
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.split{
+	height: 100%;
+	width: 25%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+} 
+.left{
+	left: 0;
+	background-color:rgb(79, 35, 75);;
+}
+.right{
+	right: 0;
+	width: 75%;
+}
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+} 
+.img{
+	height:250px!important;
+}
+button.undo{
+	margin-top: .6rem;
+	width: 200px;
+	margin-bottom: 1rem;
+	padding: 5px 10px;
+	background-color: rgb(73, 220, 183);
+	color: rgb(44, 44, 46);
+	border: 1;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+button.restart{
+	margin-top: .6rem;
+	width: 200px;
+	margin-left: 1%;
+	margin-bottom: 1rem;
+	padding: 5px 10px;
+	background-color: rgb(203, 149, 79);
+	color: rgb(44, 44, 46);
+	border: 1;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+button.Rules{
+	margin-top: .6rem;
+	width: 200px;
+	margin-left: 1%;
+	margin-bottom: 1rem;
+	padding: 5px 10px;
+	background-color: rgb(83, 215, 130);
+	color: rgb(44, 44, 46);
+	border: 1;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+.buttons{ 
+	margin-top: 1rem;
+}
+game{
+	position: relative;
+	border: 5px solid rgb(44, 44, 46);
+	border-radius: 10px;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(8, auto);
+}
+game div{
+	display: flex;
+	left: 0%;
+	width: 4rem;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+game div img{
+	height: 80%;
+}
+.square::after{
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: rgb(241, 238, 238);
+	color: #fff;
+	opacity: .3
+}
