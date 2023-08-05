@@ -1,0 +1,48 @@
+<!-- 	
+	Thara AbuSaleh 
+	Final Project 2022 - Chess Game
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chess Game</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo" style="color: aliceblue; font-size: 3rem!important;"> 
+				<i style="font-size: 3rem!important;" class="material-icons">extension</i>
+				Chess Game</a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="split left">
+		<div class="centered">
+			<img class="img" src="img/chess.png">
+			<div class="buttons">
+				<h1>playing VS computer</h1>
+				<button class="undo">Undo</button><br>
+				<button class="restart">Restart</button><br>
+				<button class="Rules" onclick="location.href='img/Rules.pdf';"> How to play!</button><br>
+			</div>
+		</div>
+	</div>
+
+	<div class="split right">
+		<div class="centered">
+			<div style="position: relative;">
+				<game></game>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+	<script type="text/javascript" src="./js/game.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+</html>
